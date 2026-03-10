@@ -223,7 +223,7 @@ export default function OpeningPageClient({ openingId }: { openingId: string }) 
                           {step.move}
                           {step.keyMove && <span style={{ color: '#d4a853', marginLeft: 2 }}>★</span>}
                         </button>
-                        {isWhite && idx + 1 < displayLine.length && idx + 1 < displayLine.length && (
+                        {isWhite && idx + 1 < displayLine.length && (
                           <button
                             onClick={() => setCurrentMoveIdx(idx + 1)}
                             style={{
@@ -247,9 +247,6 @@ export default function OpeningPageClient({ openingId }: { openingId: string }) 
                         {isWhite && idx + 1 >= displayLine.length && <span />}
                       </React.Fragment>
                     );
-                  }).filter((_, i, arr) => {
-                    // Only render white move fragments (they include their black counterpart inline)
-                    return true;
                   })}
                 </div>
               </div>
