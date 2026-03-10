@@ -266,4 +266,4 @@ export function getEndgamesByCategory(category: string): EndgamePosition[] {
   return ENDGAMES.filter(e => e.category === category);
 }
 
-export const ENDGAME_CATEGORIES = [...new Set(ENDGAMES.map(e => e.category))];
+export const ENDGAME_CATEGORIES = Array.from(new Set(ENDGAMES.map(e => e.category)));

@@ -103,7 +103,7 @@ export default function Nav() {
               borderRadius: 20,
             }}>
               <span style={{ fontFamily: 'Source Sans 3, sans-serif', fontSize: '0.78rem', fontWeight: 700, color: '#d4a853' }}>
-                {level.icon} {level.name}
+                {level.title}
               </span>
               <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.72rem', color: '#7a6040' }}>
                 {xp} XP

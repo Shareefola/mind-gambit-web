@@ -17,7 +17,7 @@ export function useLesson({ lesson, onComplete }: UseLessonOptions) {
   const progress = totalSteps > 0 ? Math.round(((currentStepIdx) / totalSteps) * 100) : 0;
 
   const nextStep = useCallback(() => {
-    setCompletedSteps(prev => new Set([...prev, currentStepIdx]));
+    setCompletedSteps(prev => { const next = new Set(prev); next.add(currentStepIdx); return next; });
     if (currentStepIdx < totalSteps - 1) {
       setCurrentStepIdx(i => i + 1);
     } else {

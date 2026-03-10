@@ -107,7 +107,7 @@ export default function SettingsPage() {
                             const r = Math.floor(i / 4), c = i % 4;
                             const isLight = (r + c) % 2 === 0;
                             return (
-                              <div key={i} style={{ width: 14, height: 14, background: isLight ? theme.lightSquare : theme.darkSquare, borderRadius: 1 }} />
+                              <div key={i} style={{ width: 14, height: 14, background: isLight ? theme.light : theme.dark, borderRadius: 1 }} />
                             );
                           })}
                         </div>

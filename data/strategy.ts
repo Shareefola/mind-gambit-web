@@ -12,6 +12,7 @@ export interface StrategyLesson {
     description: string;
     fen: string;
     arrows?: { from: string; to: string; color: 'gold' | 'green' | 'red' | 'blue' }[];
+    highlights?: Record<string, string>;
   };
 }
 
@@ -333,4 +334,4 @@ export function getStrategyLessonById(id: string): StrategyLesson | undefined {
   return STRATEGY_LESSONS.find(l => l.id === id);
 }
 
-export const STRATEGY_CATEGORIES = [...new Set(STRATEGY_LESSONS.map(l => l.category))];
+export const STRATEGY_CATEGORIES = Array.from(new Set(STRATEGY_LESSONS.map(l => l.category)));

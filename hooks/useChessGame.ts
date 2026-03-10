@@ -74,7 +74,7 @@ export function useChessGame({ initialFen = STARTING_FEN, onMove }: UseChessGame
 
   const getLegalMoves = useCallback((square: string): string[] => {
     const game = gameRef.current;
-    return game.moves({ square, verbose: true }).map(m => m.to);
+    return game.moves({ square: square as any, verbose: true }).map(m => m.to);
   }, []);
 
   const isPawnPromotion = useCallback((from: string, to: string): boolean => {

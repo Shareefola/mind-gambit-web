@@ -41,7 +41,7 @@ function MiniBoard({ fen, size = 100 }: { fen: string; size?: number }) {
           return (
             <div key={`${ri}-${ci}`} style={{
               width: sq, height: sq,
-              backgroundColor: isLight ? theme.lightSquare : theme.darkSquare,
+              backgroundColor: isLight ? theme.light : theme.dark,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               fontSize: sq * 0.7, lineHeight: 1,
             }}>

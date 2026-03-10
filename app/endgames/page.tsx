@@ -219,7 +219,7 @@ export default function EndgamesPage() {
           ♔ Essential Endgames
         </h1>
         <p style={{ color: '#c8a87a', fontFamily: 'Source Sans 3, sans-serif', fontSize: '1rem', maxWidth: 580 }}>
-          Mastering endgames is the fastest way to improve. These positions decide games at every level — study them until they're automatic.
+          Mastering endgames is the fastest way to improve. These positions decide games at every level — study them until they&apos;re automatic.
         </p>
       </div>
 

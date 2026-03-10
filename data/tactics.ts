@@ -171,8 +171,6 @@ export function getPuzzlesByTheme(theme: string): Puzzle[] {
   return PUZZLES.filter(p => p.theme === theme);
 }
 
-export const PUZZLE_THEMES = [...new Set(PUZZLES.map(p => p.theme))];
-
 // Phase 5 additions — more puzzles across all themes
 export const PUZZLES_PHASE5: Puzzle[] = [
   {
@@ -487,5 +485,5 @@ export const PUZZLES_PHASE10: Puzzle[] = [
 
 // Export all 50 puzzles
 export const ALL_PUZZLES = [...PUZZLES, ...PUZZLES_PHASE5, ...PUZZLES_PHASE10];
-export const ALL_THEMES = [...new Set(ALL_PUZZLES.map(p => p.theme))];
+export const ALL_THEMES = Array.from(new Set(ALL_PUZZLES.map(p => p.theme)));
 export const PUZZLE_THEMES = ALL_THEMES;
