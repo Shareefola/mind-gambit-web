@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0f0a06" rx="80"/>
+  <rect x="96" y="96" width="320" height="320" fill="none" stroke="#d4a853" stroke-width="2" rx="4"/>
+  <!-- Chess board grid (4x4 sample) -->
+  <rect x="128" y="128" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="192" y="128" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="256" y="128" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="320" y="128" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="128" y="192" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="192" y="192" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="256" y="192" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="320" y="192" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="128" y="256" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="192" y="256" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="256" y="256" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="320" y="256" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="128" y="320" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="192" y="320" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <rect x="256" y="320" width="64" height="64" fill="#b58863" opacity="0.8"/>
+  <rect x="320" y="320" width="64" height="64" fill="#d4a853" opacity="0.8"/>
+  <!-- King piece on d4 -->
+  <text x="220" y="280" font-family="Arial" font-size="80" fill="#0f0a06" text-anchor="middle">♚</text>
+</svg>
