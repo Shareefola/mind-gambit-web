@@ -1,6 +1,6 @@
 'use client';
 import { useState, useCallback, useRef } from 'react';
-import { Chess } from 'chess.js';
+import { Chess, Square } from 'chess.js';
 import { STARTING_FEN } from '@/lib/chess-utils';
 
 export interface ChessMove {
@@ -74,7 +74,7 @@ export function useChessGame({ initialFen = STARTING_FEN, onMove }: UseChessGame
 
   const getLegalMoves = useCallback((square: string): string[] => {
     const game = gameRef.current;
-    return game.moves({ square, verbose: true }).map(m => m.to);
+    return game.moves({ square: square as Square, verbose: true }).map(m => m.to);
   }, []);
 
   const isPawnPromotion = useCallback((from: string, to: string): boolean => {

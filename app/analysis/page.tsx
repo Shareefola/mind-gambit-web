@@ -43,7 +43,7 @@ function MoveList({
     }
   }, [currentIdx]);
 
-  const pairs: Array<[string, string?, number, number?]> = [];
+  const pairs: Array<[string, string | undefined, number, number?]> = [];
   for (let i = 0; i < history.length; i += 2) {
     pairs.push([history[i].san!, history[i + 1]?.san, i, i + 1 < history.length ? i + 1 : undefined]);
   }

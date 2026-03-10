@@ -21,7 +21,6 @@ export default function manifest(): MetadataRoute.Manifest {
         src: '/screenshots/home.png',
         sizes: '1280x720',
         type: 'image/png',
-        label: 'MindGambit Home — Premium Chess Learning',
       },
     ],
   };
